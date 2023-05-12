@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"
+      integrity="sha512-fuxK9KrfYYxsXOm+VTYLEX3vOKymX2CDP+X1q0vsTwe9LPyJBSC3LXPu79ZNZiNCFrSzzMklmp5bU9Da/1TQEw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/main.js" type="module" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon.png"
+    />
+    <title>eCommerce</title>
+  </head>
+  <body class="light">
+    <header>
+      <nav navbar>
+      <a class="logo__store" href=""><svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 48.92 56.48"
+        class="nav_logo-icon"
+        style="width: 45px"
+      >
+        <title>Academlo Logo</title>
+        <g>
+          <g>
+            <path
+              d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"
+            ></path>
+            <span class="navbar_brand">STORE</span>
+          </g>          
+        </g>        
+      </svg>      
+      </a>      
+          <ul class="menu">
+            <li>
+              <a class="link_menu" href="#top">Home</a>
+            </li>
+            <li>
+              <a class="link_menu" href="#category">Products</a>
+            </li>
+            <li>
+            <input class="checkbox" type="checkbox" id="checkbox">
+              <label class="label" for="checkbox">
+                <i class='bx bxs-moon'></i>
+                <i class="bx bxs-sun"></i>                
+                <span class="ball"></span>
+              </label>
+            </li>
+            <li>
+              <i class="bx bxs-cart">
+                <span class="amountProducts"></span>
+              </i>
+            </li>
+          </ul>
+          <i class='bx bx-menu'></i>
+     
+
+        <!-- <i class="bx bxs-sun"></i> -->
+
+      </nav>
+    </header>
+    <main>
+    <div class="main_content">
+      <section class="content__offer" id="offer">
+        <div class="product__offer">
+          <p class="offer">New Sweatshirt</p>
+          <p class="offer">COLLECTIONS 2022</p>
+          <br />
+          <p>
+            Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+            imported from the 2022 series, with a modern design.
+          </p>
+          <br />
+          <span class="price__offer">Price: $14.00</span><br />
+          <button class="show_more">Show More</button>
+        </div>
+        <div class="image__offer">
+          <img src="./assets/img/sweater2.png" alt="sweater2" />
+        </div>
+      </section>
+    </div>
+
+    <section class="categorys" id="category">
+      <div class="category">
+        <button data-filter="all" class="button__category">
+          <span><b>Show all</b><br /></span>
+          <span>Show all products</span>
+        </button>
+        <button data-filter=".shirt" class="button__category">
+          <span><b>Shirt</b><br /></span>
+          <span>7 Products</span>
+        </button>
+        <button data-filter=".hoddie" class="button__category">
+          <span><b>Hoddies</b><br /></span>
+          <span>6 Products</span>
+        </button>
+        <button data-filter=".sweater" class="button__category">
+          <span><b>Sweater</b><br /></span>
+          <span>5 Products</span>
+        </button>
+      </div>
+    </section>
+    <div class="products"></div>
+    <div class="cart">
+      <div class="cart__products"></div>
+      <div class="cart__total">
+        <div class="cart__total--info">
+          <span class="info__amount"></span><span class="info__total"></span>
+        </div>
+        <button class="btn__buy">Comprar</button>
+      </div>
+    </div>
+    <section class="modal modal__show">
+      <div class="modal__container">
+        <a href="#"class="modal__close"><i class='bx bx-window-close'></i></a>        
+        <p>
+          <img src="./assets/img/shirt1_prckre.png" alt="imagen de producto" />
+        </p>
+          <div class="product__info">
+            <a href=""><h4 class="name">Camiseta de manga corta con cuello redondo - shirt</h4></a>
+            <p class="description">Esta camiseta básica presenta un corte regular y un cuello redondo clásico. Es ideal para el uso diario y se puede combinar con una amplia variedad de looks.</p>
+            <h4><span class="stock"><b>Stock: 5</b></span></h4>
+            <h5 class="price">
+              Price: $10.00
+              <i class='bx bxs-plus-circle'></i>
+            </h5>          
+          </div>       
+      </div>
+    </section>
+
+    <footer class="light">
+      <div class="footer__content">
+        <div class="footer__item">
+          <h3 class="title_footer">Our information</h3>
+          <ul>
+            <li>
+              <a class="modal__product" href="#top"
+                ><p class="link_footer">Toluca - Mexico</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="title_footer">About Us</h3>
+          <ul>
+            <li>
+              <a href="#top"><p class="link_footer">Support Center</p></a>
+            </li>
+            <li>
+              <a href="#top"><p class="link_footer">Customer Support</p></a>
+            </li>
+            <li>
+              <a href="#top"><p class="link_footer">About Us</p></a>
+            </li>
+            <li>
+              <a href="#top"><p class="link_footer">Copy Right</p></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="title_footer">Products</h3>
+          <ul>
+            <li>
+              <a href="#top"><p class="link_footer">Hoddies</p></a>
+            </li>
+            <li>
+              <a href="#top"><p class="link_footer">Shirt</p></a>
+            </li>
+            <li>
+              <a href="#top"><p class="link_footer">About Us</p></a>
+            </li>
+            <li>
+              <a href="#top"><p class="link_footer">Sweatshirt</p></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="title_footer">Social</h3>
+            <ul class="social__item">
+              <li>
+                <a href="#top"
+                  ><i class="bx bxl-facebook-square icon_redes"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#top"><i class="bx bxl-twitter icon_redes"></i></a>
+              </li>
+              <li>
+                <a href="#top"><i class="bx bxl-instagram icon_redes"></i></a>
+              </li>
+            </ul>   
+        </div>       
+      </div>
+      <div></div>
+      <section class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <span class="powered-by">Powered by: Leonardo Diaz Castrillon, ceise@live.com
+              <a class="github-link" href="https://github.com/NexoCreative/ecommerce1.git">  - https://github.com/NexoCreative/ecommerce1.git</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    
+    
+
+  </body> 
+</html>
